@@ -6,4 +6,4 @@ used for frontend:
 to run yourself you need to setup project in firebase and setup imgur api.
 
 Links to deploy:
- (DEMO)[https://vlobdam.github.io/superheroes/]
+ [DEMO](https://vlobdam.github.io/superheroes/)
