@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://orca-app-i3fll.ondigitalocean.app";
 
 export const fetchHeroesApi = async (page = 1, limit = 5) => {
   try {
