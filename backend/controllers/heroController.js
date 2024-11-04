@@ -81,6 +81,8 @@ const addHero = async (req, res) => {
     new_images,
   } = req.formData;
 
+  console.log(nickname)
+
   if (!nickname) {
     return res.status(400).json({ message: "Nickname is required" });
   }
@@ -109,7 +111,8 @@ const addHero = async (req, res) => {
     images,
   };
 
-  try { 
+  try {
+    console.log(newHero)
     await ref.push(newHero);
     return res.status(201).json({ message: "Hero created successfully" });
   } catch (error) {
