@@ -8,6 +8,8 @@ async function uploadImage (imageData) {
       body: imageData
     });
     
+    console.log(response.json())
+
     const data = (await response.json()).data
 
     return {
