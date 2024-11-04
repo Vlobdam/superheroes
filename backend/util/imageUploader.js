@@ -8,9 +8,9 @@ async function uploadImage (imageData) {
       body: imageData
     });
     
-    console.log(await response.json())
+    await response.json()
 
-    const data = (await response.json()).data
+    const data = response.data
 
     return {
       id: data.id,
